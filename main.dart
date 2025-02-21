@@ -25,8 +25,9 @@ class MyApp extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
+          ),
         ),
-      ),
+      ), // Fixed bracket issue
       home: AuthScreen(),
     );
   }
@@ -104,6 +105,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   isLogin ? 'Login' : 'Sign Up',
                   style: TextStyle(fontSize: 18),
                 ),
+              ), // Fixed missing parenthesis
               SizedBox(height: screenHeight * 0.02),
               TextButton(
                 onPressed: toggleAuthMode,
